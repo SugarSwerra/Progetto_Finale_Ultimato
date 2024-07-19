@@ -1,0 +1,28 @@
+<div class="wrapper">
+  <div class="content">
+    <div class="container" *ngIf="!isLoggedIn">
+      <div class="row mt-5">
+        <div class="col-12 col-md-6 text-center d-flex align-items-center">
+          <img class="img-fluid mt-5 full-size" src="Angular_Icon.png">
+        </div>
+        <div class="col-12 col-md-6 mt-5 text-center">
+          <form (ngSubmit)="login(form)" #form="ngForm">
+            <h2 class="fw-bold m-3">Log in your account</h2>
+            <div class="mb-3">
+              <label for="email" class="form-label"></label>
+              <input type="email" class="input" [(ngModel)]="this.loginRequest.email" id="email" aria-describedby="email" placeholder="email" name="email" [ngClass]="{'errorClass': email.invalid, 'validClass': email.valid}" required #email="ngModel">
+            </div>
+            <div class="mb-3">
+              <label for="password" class="form-label"></label>
+              <input type="password" class="input" [(ngModel)]="this.loginRequest.password" id="password" placeholder="password" name="password" required [ngClass]="{'errorClass': password.invalid, 'validClass': password.valid}" #password="ngModel">
+            </div>
+            <button class="btn btn-primary" [disabled]="!form.valid">Sign In</button>
+          </form>
+          <h5 class="mt-3">Or <a href="#">Forgetten Password?</a></h5>
+          <h5 class="mt-3">Don't have an account? <a routerLink="/register">Register</a></h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

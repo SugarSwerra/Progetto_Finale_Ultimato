@@ -1,0 +1,77 @@
+.input {
+  font-family: "SF Pro";
+  max-width: 12rem;
+  padding: 0.875rem;
+  font-size: 1rem;
+  border: 1.5px solid #000;
+  border-radius: 0.5rem;
+  box-shadow: 2.5px 3px 0 #000;
+  outline: none;
+  transition: ease 0.25s;
+  height: 2.5rem
+}
+
+.input:focus {
+  box-shadow: 5.5px 7px 0 black;
+}
+
+button {
+  height: 4rem;
+  width: 15rem;
+  background-color: white;
+  color: black;
+  border-radius: 10em;
+  font-size: 17px;
+  font-weight: 600;
+  padding: 1em 2em;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid black;
+  box-shadow: 0 0 0 0 black;
+  background: linear-gradient(#bcb5f5, #9198e5);
+}
+
+button:hover {
+  transform: translateY(-4px) translateX(-2px);
+  box-shadow: 2px 5px 0 0 black;
+}
+
+button:active {
+  transform: translateY(2px) translateX(1px);
+  box-shadow: 0 0 0 0 black;
+}
+
+#checkbox-news {
+  border: 2px solid black;
+}
+
+.full-size {
+  height: 100%;
+  object-fit: cover;
+}
+
+.errorClass {
+  background-color: #feabab;
+}
+
+.validClass {
+  background-color: #ccfc9a;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,35 @@
+<div class="container text-center">
+  <img src="userProfileBackground.png" alt="">
+
+  <h1 id="title">Area Personale</h1>
+
+
+  <form (ngSubmit)="changeData(form)" #form="ngForm">
+    <div class="row justify-content-center">
+      <div class="col-12 d-flex flex-column align-items-center">
+        <label for="name" class="text">Name</label>
+        <input type="text" name="name" [(ngModel)]="this.userUpdateDTO.nome" id="name" class="input" value="{{nome}}">
+      </div>
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-12 d-flex flex-column align-items-center">
+        <label for="lastname" class="text">Lastname</label>
+        <input type="text" name="name" [(ngModel)]="this.userUpdateDTO.cognome" id="lastname" class="input" value="{{cognome}}">
+      </div>
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-12 d-flex flex-column align-items-center">
+        <label for="email" class="text">Email</label>
+        <input type="text" name="email" [(ngModel)]="this.userUpdateDTO.email" id="email" class="input" value="{{email}}">
+      </div>
+    </div>
+
+    <button class="btn btn-primary btn-color mt-5">Change Data</button>
+  </form>
+
+
+  <button class="btn btn-danger mt-5" (click)="deleteUser()">Delete User</button>
+  </div>
+

@@ -1,0 +1,12 @@
+footer {
+  background-color: #423495;
+  margin-top: 5rem
+}
+
+.social {
+  margin: 0.2rem
+}
+
+.social:hover {
+  font-size: xx-large;
+}

@@ -1,0 +1,97 @@
+<div class="container-fluid mt-5" style="padding:0;">
+  <div id="carouselExample" class="carousel slide carousel-container">
+
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="Carousel1.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="Carousel2.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="Carousel3.jpg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true" hidden></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true" hidden></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+    <div class="row">
+      <div class="overlay">
+        <div class="card text-center">
+          <p class="card-title">Get Started</p>
+          <p class="small-desc">
+            Ulearn is an innovative online education platform dedicated to providing high-quality courses
+            across various fields of study. Founded on the belief that education should be accessible, engaging, and tailored to the needs of the modern learner,
+            Ulearn leverages cutting-edge technology to deliver an immersive and flexible learning experience.
+          </p>
+          <div class="go-corner">
+            <a style="text-decoration: none" class="go-arrow" href="#courses">→</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</div>
+
+
+
+<div id="container-sponsor" class="container-fluid text-white text-center" >
+  <h4>A Hundred sponsors choosed us</h4>
+  <div class="row align-items-center">
+    <div class="col-12 col-md-6 d-flex justify-content-center">
+      <img class="img-fluid mt-5" src="SI_Logo.png" style="height: 10vh;" alt="">
+    </div>
+    <div class="col-12 col-md-6 d-flex justify-content-center">
+      <img class="img-fluid  mt-5" src="Ibm.png" style="height: 10vh;" alt="">
+    </div>
+    <h4 class="sponsor">Be one of them, don't waste your time</h4>
+  </div>
+</div>
+
+<div class="container text-center mt-5">
+  <h2>Our Courses</h2>
+  <p>Ulearn offers a diverse range of courses covering subjects such as
+    technology, business, health, arts, and personal development.
+    Each course is designed by industry experts and experienced educators,
+    ensuring that content is relevant, up-to-date, and practical.
+    Our interactive modules, video lectures,
+    and hands-on projects provide a dynamic and engaging learning experience.</p>
+</div>
+
+<div class="container text-center mt-5">
+  <h2 class="fs-1">Search beetween our courses!</h2>
+</div>
+
+
+
+<app-search-course (cerca)="receiveData($event)"></app-search-course>
+<div class="container mt-5" id="courses">
+  <div class="row">
+    <ng-container *ngFor="let course of courses">
+      <ng-container *ngIf="course.nome_Corso.toLowerCase().includes(courseSearch.toLowerCase())">
+        <div class="col-12 col-md-6 col-lg-4 mx-auto mt-5">
+          <app-shop [corso]="course"></app-shop>
+        </div>
+      </ng-container>
+    </ng-container>
+  </div>
+</div>
+
+<div class="container text-center mt-5">
+  <h2>Our Community</h2>
+  <p>Join a vibrant community of learners from around the world.
+    Ulearn's forums and social features allow you to connect, collaborate, and
+    share knowledge with peers and instructors, enhancing your learning journey.</p>
+
+  <h3>Don't wait anymore! Go to register!</h3>
+  <button class="button" routerLink="register">Register</button>
+</div>
+
+

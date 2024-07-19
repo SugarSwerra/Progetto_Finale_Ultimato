@@ -1,0 +1,131 @@
+#logo {
+  height: 2rem;
+  width: 8rem;
+  cursor: pointer;
+}
+
+#navbar-divider {
+  height: 3rem;
+  border-left:1px solid white;
+
+}
+
+.input {
+  color: black;
+  border: 2px solid #8707ff;
+  border-radius: 10px;
+  padding: 0.2rem;
+  background: white;
+  max-width: 10rem;
+  margin-right: 0.5rem;
+}
+
+.input:active {
+  box-shadow: 2px 2px 15px #8707ff inset;
+}
+
+.button-login {
+  cursor: pointer;
+  width: 4rem;
+  height: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 1.125em;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: #fff;
+  background: #644dff;
+  border: 2px solid #4836bb;
+  box-shadow: 0 8px 0 #654dff63;
+  transform: skew(-10deg);
+  transition: all .1s ease;
+  filter: drop-shadow(0 15px 20px #654dff63);
+  margin-bottom: 0.5rem;
+}
+
+.button-login:active {
+  letter-spacing: 0px;
+  transform: skew(-10deg) translateY(8px);
+  box-shadow: 0 0 0 #654dff63 !important;
+}
+
+.button-login:hover {
+  box-shadow: 0 8px 0 rgba(55, 25, 246, 0.39);
+  font-size: larger;
+}
+
+.button-register {
+  cursor: pointer;
+  width: 6rem;
+  height: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 1.125em;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: #fff;
+  background: #2d05f6;
+  border: 2px solid #290bec;
+  box-shadow: 0 8px 0 rgba(55, 25, 246, 0.39);
+  transform: skew(-10deg);
+  transition: all .1s ease;
+  filter: drop-shadow(0 15px 20px rgba(43, 10, 248, 0.39));
+}
+
+.button-register:active {
+  letter-spacing: 0px;
+  transform: skew(-10deg) translateY(8px);
+  box-shadow: 0 0 0 #654dff63 !important;
+}
+
+.button-register:hover {
+  box-shadow: 0 8px 0 rgba(31, 6, 113, 0.47);
+  font-size: larger;
+}
+
+.button-logout {
+  cursor: pointer;
+  width: 6rem;
+  height: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 1.125em;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: #fff;
+  background: #2d05f6;
+  border: 2px solid #290bec;
+  box-shadow: 0 8px 0 rgba(55, 25, 246, 0.39);
+  transform: skew(-10deg);
+  transition: all .1s ease;
+  filter: drop-shadow(0 15px 20px rgba(43, 10, 248, 0.39));
+}
+
+.button-logout:active {
+  letter-spacing: 0px;
+  transform: skew(-10deg) translateY(8px);
+  box-shadow: 0 0 0 #654dff63 !important;
+}
+
+.button-logout:hover {
+  box-shadow: 0 8px 0 rgba(36, 20, 83, 0.47);
+  font-size: larger;
+}
+
+
+
+.link:hover {
+  background: #716f6f;
+  padding: 0.7rem;
+}
+
+#id:hover {
+  cursor: pointer;
+}
+
